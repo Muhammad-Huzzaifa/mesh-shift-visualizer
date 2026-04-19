@@ -1,0 +1,186 @@
+.complexity-panel {
+  overflow: hidden;
+  animation: slideIn 0.3s ease;
+}
+
+.cp2-header {
+  background: var(--black);
+  color: var(--white);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cp2-title {
+  font-family: var(--font-display);
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.cp2-empty {
+  padding: 40px;
+  text-align: center;
+  opacity: 0.4;
+  font-size: 13px;
+}
+
+.cp2-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.cp2-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: var(--border);
+}
+
+.cp2-metric {
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  border-right: 2px solid var(--black);
+  text-align: center;
+}
+
+.cp2-metric:last-child {
+  border-right: none;
+}
+
+.cp2-metric-yellow { background: var(--yellow); }
+.cp2-metric-blue { background: var(--blue); color: white; }
+.cp2-metric-green { background: var(--green); }
+.cp2-metric-red { background: var(--red); color: white; }
+
+.cp2-metric-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  opacity: 0.75;
+}
+
+.cp2-metric-value {
+  font-family: var(--font-display);
+  font-size: 36px;
+  line-height: 1;
+}
+
+.cp2-metric-formula {
+  font-family: var(--font-code);
+  font-size: 9px;
+  opacity: 0.7;
+  text-align: center;
+}
+
+.cp2-formulas {
+  padding: 16px 20px;
+  border-bottom: var(--border);
+}
+
+.cp2-formula-title {
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  opacity: 0.6;
+}
+
+.cp2-formula-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cp2-formula-box {
+  flex: 1;
+  padding: 12px;
+  border: var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cp2-ring { background: #fff0f0; }
+.cp2-mesh { background: #f0f4ff; }
+
+.cp2-fl {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  opacity: 0.6;
+}
+
+.cp2-formula-box code {
+  font-family: var(--font-code);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.cp2-fv {
+  font-family: var(--font-display);
+  font-size: 20px;
+}
+
+.cp2-fv-red { color: var(--red); }
+.cp2-fv-blue { color: var(--blue); }
+
+.cp2-vs {
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: #555;
+}
+
+.cp2-chart-section {
+  padding: 16px 20px;
+  border-bottom: var(--border);
+}
+
+.cp2-chart-title {
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  font-weight: 700;
+  opacity: 0.6;
+}
+
+.cp2-chart {
+  width: 100%;
+}
+
+.cp2-verdict {
+  margin: 0;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  border-bottom: var(--border);
+}
+
+.cp2-verdict-win {
+  background: var(--green);
+}
+
+.cp2-verdict-neutral {
+  background: #eee;
+}
+
+.cp2-verdict-icon {
+  font-size: 20px;
+}
+
+.cp2-explanation {
+  padding: 14px 20px;
+  font-size: 11px;
+  line-height: 1.7;
+  background: #f8f3e8;
+  color: #444;
+}
+
+.cp2-explanation strong {
+  color: var(--black);
+}
