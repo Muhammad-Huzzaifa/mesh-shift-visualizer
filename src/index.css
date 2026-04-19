@@ -1,0 +1,115 @@
+:root {
+  --black: #0a0a0a;
+  --white: #f5f0e8;
+  --yellow: #ffe600;
+  --red: #ff2d2d;
+  --blue: #0057ff;
+  --green: #00c853;
+  --orange: #ff6b00;
+  --purple: #7c00ff;
+  --border: 3px solid #0a0a0a;
+  --border-thick: 5px solid #0a0a0a;
+  --shadow: 6px 6px 0px #0a0a0a;
+  --shadow-sm: 4px 4px 0px #0a0a0a;
+  --shadow-lg: 10px 10px 0px #0a0a0a;
+  --font-mono: 'Space Mono', monospace;
+  --font-display: 'Bebas Neue', cursive;
+  --font-code: 'DM Mono', monospace;
+  --radius: 0px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--black);
+  font-family: var(--font-mono);
+  min-height: 100vh;
+  background-image: 
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 39px,
+      rgba(0,0,0,0.06) 39px,
+      rgba(0,0,0,0.06) 40px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 39px,
+      rgba(0,0,0,0.06) 39px,
+      rgba(0,0,0,0.06) 40px
+    );
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--white); border-left: 2px solid var(--black); }
+::-webkit-scrollbar-thumb { background: var(--black); }
+
+/* Utility */
+.neo-box {
+  border: var(--border);
+  box-shadow: var(--shadow);
+  background: var(--white);
+}
+.neo-box-yellow { background: var(--yellow); }
+.neo-box-blue { background: var(--blue); color: var(--white); }
+.neo-box-red { background: var(--red); color: var(--white); }
+
+button {
+  cursor: pointer;
+  font-family: var(--font-mono);
+  border: var(--border);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.08s, box-shadow 0.08s;
+}
+button:active {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+}
+
+input, select {
+  font-family: var(--font-mono);
+  border: var(--border);
+  background: var(--white);
+  outline: none;
+}
+
+input:focus, select:focus {
+  outline: 3px solid var(--blue);
+  outline-offset: 2px;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-8px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes popIn {
+  0% { transform: scale(0.85); opacity: 0; }
+  60% { transform: scale(1.05); }
+  100% { transform: scale(1); opacity: 1; }
+}
+@keyframes pulse {
+  0%, 100% { box-shadow: var(--shadow); }
+  50% { box-shadow: var(--shadow-lg); }
+}
+@keyframes arrowFlow {
+  0% { opacity: 0.3; transform: translateX(-4px); }
+  100% { opacity: 1; transform: translateX(4px); }
+}
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-6px); }
+  40% { transform: translateX(6px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+}
