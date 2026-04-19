@@ -4,7 +4,7 @@ An interactive web application that simulates and visualizes **circular q-shift*
 
 ## 🚀 Live Deployment
 
-**[→ View Live App](https://mesh-shift-visualizer.vercel.app)**
+**[→ View Live App](https://mesh-shift-visualizer-beta.vercel.app)**
 
 ## 📐 Algorithm
 
@@ -54,7 +54,7 @@ mesh-shift-visualizer/
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/mesh-shift-visualizer.git
+git clone https://github.com/Muhammad-Huzzaifa/mesh-shift-visualizer.git
 cd mesh-shift-visualizer
 
 # Install dependencies

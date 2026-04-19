@@ -170,7 +170,7 @@ export default function App() {
         <span className="footer-sep">|</span>
         <span>node i → node (i + q) mod p</span>
         <span className="footer-sep">|</span>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="footer-link">
+        <a href="https://github.com/Muhammad-Huzzaifa/mesh-shift-visualizer.git" target="_blank" rel="noopener noreferrer" className="footer-link">
           ⊞ GITHUB REPO
         </a>
       </footer>
